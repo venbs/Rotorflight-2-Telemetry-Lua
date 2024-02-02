@@ -18,9 +18,9 @@
     set crsf_att_yaw_reuse = MCU_TEMP
     save
 
-1.安装脚本
-</br>1.1将lua文件复制到SD/SCRIPTS/TELEMETRY下
-</br>1.2模型设置，最后一页Screen，添加类型为Script，并选择 rf2t
-</br>1.3回到主界面，按下Telemetry按钮，完成！
+**2.安装脚本**
+</br>2.1将lua文件复制到SD/SCRIPTS/TELEMETRY下
+</br>2.2模型设置，最后一页Screen，添加类型为Script，并选择 rf2t
+</br>2.3回到主界面，按下Telemetry按钮，完成！
 
 ![Info](https://github.com/venbs/Rotorflight-2-Telemetry-Lua/assets/30721827/f292b3da-cda4-4632-b859-f29121301319)
