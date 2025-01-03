@@ -12,11 +12,8 @@
 </br>1.2 打开打开下方所有遥测类型的复选框
 </br>1.3 将下列命令复制CLI中运行，记得save！
 
-    set crsf_gps_heading_reuse = THROTTLE
-    set crsf_flight_mode_reuse = GOV_ADJFUNC
-    set crsf_gps_altitude_reuse = HEADSPEED
-    set crsf_gps_ground_speed_reuse = ESC_TEMP
-    set crsf_gps_sats_reuse = MCU_TEMP
+    set crsf_telemetry_mode = CUSTOM
+    set crsf_telemetry_sensors = 3,43,4,5,6,60,15,50,52,93,90,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
     save
 
 **2.安装脚本**
