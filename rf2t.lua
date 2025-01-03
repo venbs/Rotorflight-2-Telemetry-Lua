@@ -1,22 +1,19 @@
 --RF2 Telemetry Dashboard
---version 0.2.1
+--version 0.2.2
 
 --[[
 CLI:
-set crsf_gps_heading_reuse = THROTTLE
-set crsf_flight_mode_reuse = GOV_ADJFUNC
-set crsf_gps_altitude_reuse = HEADSPEED
-set crsf_gps_ground_speed_reuse = ESC_TEMP
-set crsf_gps_sats_reuse = MCU_TEMP
+set crsf_telemetry_mode = CUSTOM
+set crsf_telemetry_sensors = 3,43,4,5,6,60,15,50,52,93,90,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 save
 ]]
 
 --default values
 local modelName = "RF2"
 local txBat = 0
-local teleItem = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+local teleItem = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 local teleItemId = {}
-local teleItemName = { "RxBt", "Curr", "Capa", "Bat%", "Alt", "GSpd", "Hdg", "1RSS", "RQly", "FM" }
+local teleItemName = { "Vbat", "Curr", "Capa", "Bat%", "Hspd", "Tesc", "Thr", "1RSS", "RQly", "ARM" }
 local connected = false
 local currMax = 0
 local armed = false
@@ -133,7 +130,11 @@ function drawMainPage()
     if (connected == false) then
         lcd.drawText(63, 1, "RX LOSS", SMLSIZE + INVERS + BLINK + CENTER)
     else
-        lcd.drawText(63, 1, teleItem[10], SMLSIZE + INVERS + CENTER)
+	    if teleItem[10] == 1 or teleItem[10] == 3 then
+            lcd.drawText(63, 1, "ARMED", SMLSIZE + INVERS + CENTER)
+		else
+            lcd.drawText(63, 1, "DISARMED", SMLSIZE + INVERS + CENTER)
+        end
     end
 
     -- TX Battery Voltage
