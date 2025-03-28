@@ -5,7 +5,7 @@
 
 </br>**支持的设备**：任何128*64的LCD，且为OPENTX/EDGETX/FREEDOMTX
 
-</br>**例如**：Radiomaster Boxer ,Radiomaster TX12, Jumper T20,TBS Tango 2等
+</br>**例如**：Radiomaster Boxer ,Radiomaster TX12, Jumper T20等
 
 </br>**支持的协议**：ELRS接收机，并且启用了2.1的ELRS自定义遥测！
 
