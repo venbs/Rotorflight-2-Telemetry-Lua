@@ -14,8 +14,8 @@
 </br>1.2 设置遥测比率与你的TX一致！
 </br>1.3 将下列命令复制CLI中运行，记得save！
     
-    set crsf_telemetry_mode = CUSTOM 
-    set crsf_telemetry_sensors = 3,43,4,5,6,60,15,50,52,93,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+    set telemetry_mode = CUSTOM 
+    set telemetry_sensors = 3,43,4,5,6,60,15,50,52,93,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
     save
 
 **2.install lua**
